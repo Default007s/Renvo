@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myDrivesClassrooms.css">
+    <title>Renvo | My Drives</title>
+</head>
+<body>
+
+<div class="desktop">
+<nav>
+    <a href="classroomAdmin">
+        <div class="navlogo">
+        <img src="Images/Icons/1-01.jpg" alt="">
+        <div>
+            <h1>RENVO</h1>
+            <h3>eNav Beta by Renvo</h3>
+        </div>    
+    </div>
+    </a>
+    <div id="navList" class="navList">
+        <ul>
+            <li><a href="classroomAdmin">Classroom Admin</a></li>
+            <li class="active"><a href="myDrivesClassrooms">My Drives</a></li>
+            <li>Friends <span class="comingSoon">Coming Soon</span></li>
+            <li class="myAccount"><a href="myAccount">My Account</a></li>
+            <li class="lastList"><a href="contactUs">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <img onclick="navBarToggle()" class="menuIcon" src="Images/Icons/Menu.svg" alt="">
+       </div>
+    <img class="logout" src="Images/Icons/logout.svg" alt="">
+    <button><a>Logout</a></button>
+</nav>
+<div class="mainBody">
+    <h1 class="mainh1">My Drives</h1>
+    <div class="topReel">
+        <div>
+            <a href="myDrives"><h3>Solo Drive</h3></a>
+            <a href="#"><h3 class="activeReel">Class Rooms</h3></a>
+            <a href="myDrivesMeetups"><h3>Meetups</h3></a>
+        </div>
+    </div>
+    <h2>Classrooms</h2>
+    <div class="containers">
+        <div class="smallContainer">
+            <div class="smallHead">
+                <h3>All Classes</h3>
+                <div>
+                    <img onclick="togglePopup()" class="addImg" src="Images/Icons/Add.svg" alt="">
+                    <img class="trashImg" id="trashImg" src="Images/Icons/Delete.svg" alt="">
+                </div>
+            </div>
+            <div class="smallBody" id="smallBody"></div>
+        </div>
+        <div class="largeContainer" id="largeContainer">
+            <div class="largeContent">
+            <svg onclick="closeLargeContainer()" class="closeBtn_largeContainer" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.2673 3.45447C9.63835 3.45447 3.4541 9.63871 3.4541 17.2676C3.4541 24.9011 9.63835 31.0853 17.2673 31.0853C24.9007 31.0853 31.085 24.9011 31.085 17.2676C31.085 9.63871 24.9007 3.45447 17.2673 3.45447ZM18.8988 17.2676C18.8988 17.2676 22.5127 20.8861 22.6904 21.0593C23.137 21.5105 23.137 22.2396 22.6904 22.6908C22.2393 23.1374 21.5101 23.1374 21.0589 22.6908C20.8857 22.5131 17.2673 18.8991 17.2673 18.8991C17.2673 18.8991 13.6533 22.5131 13.4801 22.6908C13.029 23.1374 12.2998 23.1374 11.8486 22.6908C11.402 22.2396 11.402 21.5105 11.8486 21.0593C12.0264 20.8861 15.6403 17.2676 15.6403 17.2676C15.6403 17.2676 12.0264 13.6537 11.8486 13.4805C11.402 13.0293 11.402 12.3002 11.8486 11.849C12.2998 11.4024 13.029 11.4024 13.4801 11.849C13.6533 12.0267 17.2673 15.6407 17.2673 15.6407C17.2673 15.6407 20.8857 12.0267 21.0589 11.849C21.5101 11.4024 22.2393 11.4024 22.6904 11.849C23.137 12.3002 23.137 13.0293 22.6904 13.4805C22.5127 13.6537 18.8988 17.2676 18.8988 17.2676Z" fill="#FDEFEF"/>
+            </svg>                    
+            <div class="largeHead">
+                <h1 id="mainTextlargeContainer">RENVO (class seattle 2021 sprint) - Learning modules</h1>
+                <div>
+                    <div class="icon1 icon firstIcon">
+                        <img src="Images/Icons/Link 1.svg" alt="">
+                        <a id="displayedlink1" src="#">Link 1</a>
+                    </div>
+                    <div class="icon2 icon secondIcon">
+                        <img class="secondIconImg" src="Images/Icons/Link 2.svg" alt="">
+                        <a id="displayedlink2" src="#">Link 2</a>
+                    </div>
+                    <div class="icon3 icon">
+                        <img class="thirdIconImg" src="Images/Icons/Link 3.svg" alt="">
+                        <a id="displayedlink3" src="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="classLessons">
+                <div class="lesson">
+                    <div class="banner">
+                        <h3 class="lessonHeader">Class Lesson 1</h3>
+                        <img onclick="removeInstructions()" class="upIcon" src="Images/Icons/up.svg" alt="">
+                        <img class="dropdownIcon" src="Images/Icons/dropdown.svg" alt="">
+                    </div>
+                    <div class="instructions">
+                        <h4>Instructions and Notes</h4>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lesson">
+                    <div class="banner">
+                        <h3 class="lessonHeader">Class Lesson 2</h3>
+                        <img onclick="removeInstructions()" class="upIcon" src="Images/Icons/up.svg" alt="">
+                        <img class="dropdownIcon" src="Images/Icons/dropdown.svg" alt="">
+                    </div>
+                    <div class="instructions">
+                        <h4>Instructions and Notes</h4>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lesson">
+                    <div class="banner">
+                        <h3 class="lessonHeader">Class Lesson 3</h3>
+                        <img onclick="removeInstructions()" class="upIcon" src="Images/Icons/up.svg" alt="">
+                        <img class="dropdownIcon" src="Images/Icons/dropdown.svg" alt="">
+                    </div>
+                    <div class="instructions">
+                        <h4>Instructions and Notes</h4>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lesson">
+                    <div class="banner">
+                        <h3 class="lessonHeader">Class Lesson 4</h3>
+                        <img onclick="removeInstructions()" class="upIcon" src="Images/Icons/up.svg" alt="">
+                        <img class="dropdownIcon" src="Images/Icons/dropdown.svg" alt="">
+                    </div>
+                    <div class="instructions">
+                        <h4>Instructions and Notes</h4>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<h1 id="copyright" class="copyright">Copyright © 2020-2021 RENVO</h1>
+<div class="popup" id="popup">
+    <div class="overlay">
+        <div class="popupContent">
+            <h2>Add Class</h2>
+            <img onclick="togglePopup()" class="closeBtn" src="Images/Icons/Close.svg" alt="">
+            <div class="form">
+                <h4>Class Name</h4>
+                <input id="className" type="text" placeholder="Ex. John Doe"></input>
+                <button onclick="addClass()" class="addBtn">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/myDrivesClassrooms.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

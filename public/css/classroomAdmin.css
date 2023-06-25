@@ -1,0 +1,369 @@
+body{
+    background-color: #F5F5F7;
+}
+
+body .desktop{
+    height: 100vh;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    font-family: sf-thin;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(160, 160, 160);
+    padding: .9vw 0;
+    letter-spacing: .3px;
+}
+
+.toplane{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.toplane h1{
+    font-size: 38.4px;
+    width: 50%;
+}
+
+.toplane div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 3.84px;
+}
+
+.dropdownAtoZ{
+    cursor: pointer;
+    font-family: sf-regular;
+    background-color: #fff;
+    flex-direction: row;
+    border: none;
+    font-size: 18px;
+    padding: 13.44px 23px;
+    border-radius: 5px;
+    box-shadow: .1px 1px 4px .01px rgb(219, 219, 219);
+}
+
+.dropdownAtoZ img{
+    width: 14.4px;
+    height: 14.4px;
+    margin-left: 30px;
+    padding-top: 5.76;    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 19.2px;
+    grid-row-gap: 19.2px;
+    margin-top: 19.2px;
+}
+
+.card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 19.2px;
+    padding-right: 57.6px;
+    border-radius: 8px;
+    box-shadow: .1px 1px 4px .001px rgb(233, 233, 233);
+}
+
+.cardImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105.6px;
+    height: 105.6px;
+    background-color: var(--greybackground);
+    border-radius: 8px;
+}
+
+.card img{
+    width: 44.16px;
+    height: 44.16px;
+}
+
+.cardText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 19.2px;
+}
+
+.cardText h1{
+    font-family: sf-light;
+    font-size: 23px;
+    letter-spacing: .8px;
+}
+
+.cardText h3{
+    font-family: sf-thin;
+    font-size: 21.1px;
+    color: rgb(117, 117, 117);
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 1620px) {
+    .card{
+        padding: 12px;
+    }
+    
+    .cardImg{
+        width: 85px;
+        height: 85px;
+    }
+
+    .card img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .cardText h1{
+        font-size: 21px;
+    }
+
+    .cardText h3{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .card{
+        padding: 8px;
+    }
+    
+    .cardImg{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .cardText h1{
+        font-size: 17px;
+    }
+    
+    .cardText h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1105px) {
+    .cardImg{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .card img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .cardText h1{
+        font-size: 14px;
+    }
+    
+    .cardText h3{
+        font-size: 12px;
+    }
+}
+ 
+@media (max-width: 950px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card{
+        border-radius: 5px;
+    }
+    
+    .cardImg{
+        border-radius: 5px;
+    }
+    
+    .card{
+        padding: 8px;
+    }
+    
+    .cardImg{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .cardText h1{
+        font-size: 20px;
+    }
+
+    .cardText h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px) {    
+    .cardImg{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .card img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .cardText{
+        padding-left: 7px;
+    }
+    
+    .cardText h1{
+        font-size: 18px;
+    }
+    
+    .cardText h3{
+        font-size: 14px;
+    }
+    
+    .dropdownAtoZ{
+        font-size: 15px;
+    }
+
+    .dropdownAtoZ img{
+        margin-left: 15px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-height: 970px) and (max-width:600px) {
+    .copyright{
+        position: relative !important;
+    }
+}   
+
+@media (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+}
+
+/* Mobile Styles */
+
+.mobile{
+    width: 100%;
+}
+
+.mobile .copyright{
+    font-size: 16px;
+    padding: 20.6px 0;
+}
+
+.mobile .mainBody{
+    width: 100%;
+    padding: 0 34.4px;
+    margin-top: 50px;
+}
+
+.mobile .mainBody .toplane h1{
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.mobile .dropdownAtoZ{
+    font-size: 14px;
+    padding: 5px 17px;
+    border-radius: 5px;
+}
+
+.mobile .dropdownAtoZ img{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    padding-top: 7px;
+}
+
+.mobile .mainBody .cards{
+    margin-top: 57.6px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+.mobile .mainBody .cards .card{
+    border-radius: 3px;
+}
+
+.mobile .mainBody .cards .cardImg{
+    width: 78px;
+    height: 78px;
+    border-radius: 3px;
+}
+
+.mobile .mainBody .cards .cardImg img{
+    width: 40.2px;
+    height: 40.2px;
+}
+
+.mobile .mainBody .cards .cardText{
+    margin-left: 38.4px;
+}
+
+.mobile .mainBody .cards .cardText h1{
+    font-size: 23.36px;
+}
+
+.mobile .mainBody .cards .cardText h3{
+    font-size: 13.84px;
+}
+
+@media (max-width:425px) {
+    .mobile .mainBody .cards .cardText{
+        margin-left: 10px;
+    }
+    .mobile .mainBody .cards .cardText h1{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:400px) {
+    .mobile .mainBody .toplane h1{
+        font-size: 20px;
+    }   
+
+    .mobile nav{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:350px) {
+    .mobile .mainBody .toplane h1{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .mobile .mainBody .cards .cardText{
+        margin-left: 0px;
+    }
+    .mobile .mainBody .cards .cardText h1{
+        font-size: 15px;
+    }
+}

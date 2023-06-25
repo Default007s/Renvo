@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/myDrivesMeetups.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Renvo | My Drives</title>
+</head>
+<body>
+
+<div class="desktop">
+    <nav>
+        <a href="classroomAdmin">
+            <div class="navlogo">
+            <img src="Images/Icons/1-01.jpg" alt="">
+            <div>
+                <h1>RENVO</h1>
+                <h3>eNav Beta by Renvo</h3>
+            </div>    
+        </div>
+        </a>
+        <div id="navList" class="navList">
+            <ul>
+                <li><a href="classroomAdmin">Classroom Admin</a></li>
+                <li class="active"><a href="myDrivesMeetups">My Drives</a></li>
+                <li>Friends <span class="comingSoon">Coming Soon</span></li>
+                <li class="myAccount"><a href="myAccount">My Account</a></li>
+                <li class="lastList"><a href="contactUs">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <img onclick="navBarToggle()" class="menuIcon" src="Images/Icons/Menu.svg" alt="">
+           </div>
+        <img class="logout" src="Images/Icons/logout.svg" alt="">
+        <button><a>Logout</a></button>
+    </nav>
+    <div class="mainBody">
+        <h1 class="mainh1">My Drives</h1>
+        <div class="topReel">
+            <div>
+                <a href="myDrives"><h3>Solo Drive</h3></a>
+                <a href="myDrivesClassrooms"><h3>Class Rooms</h3></a>
+                <a href="#"><h3 class="activeReel">Meetups</h3></a>
+            </div>
+        </div>
+        <div class="topLane">
+            <h2>Meetups</h2>
+            <div class="addMeetup">
+                <button onclick="togglePopup()">+ New Meetup</button>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="innerContainer">
+                <h2>Active Meetups</h2>
+                <div class="lanes" id="lanes">
+                    <div class="miniLane">
+                        <h3>Meetup Name : <span>Class Seattle 2021 Sprint</span></h3>
+                        <img class="delete" src="Images/Icons/delete.svg" alt="">
+                    </div>  
+                </div>
+                <div class="participantLane">
+                    <h2>Participant</h2>
+                    <button onclick="secondTogglePopup()" class="addParticipant"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 28.4375C7.5875 28.4375 1.5625 22.4125 1.5625 15C1.5625 7.5875 7.5875 1.5625 15 1.5625C22.4125 1.5625 28.4375 7.5875 28.4375 15C28.4375 22.4125 22.4125 28.4375 15 28.4375ZM15 3.4375C8.625 3.4375 3.4375 8.625 3.4375 15C3.4375 21.375 8.625 26.5625 15 26.5625C21.375 26.5625 26.5625 21.375 26.5625 15C26.5625 8.625 21.375 3.4375 15 3.4375Z" fill="#2765FF"/>
+                        <path d="M20 15.9375H10C9.4875 15.9375 9.0625 15.5125 9.0625 15C9.0625 14.4875 9.4875 14.0625 10 14.0625H20C20.5125 14.0625 20.9375 14.4875 20.9375 15C20.9375 15.5125 20.5125 15.9375 20 15.9375Z" fill="#2765FF"/>
+                        <path d="M15 20.9375C14.4875 20.9375 14.0625 20.5125 14.0625 20V10C14.0625 9.4875 14.4875 9.0625 15 9.0625C15.5125 9.0625 15.9375 9.4875 15.9375 10V20C15.9375 20.5125 15.5125 20.9375 15 20.9375Z" fill="#2765FF"/>
+                        </svg>
+                        Add Participant
+                    </button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="headerRow">
+                    <h3>Participant</h3>
+                    <h3>Vessel</h3>
+                    <h3>Control</h3>
+                    <h3 class="lastRowElement">Action</h3>
+                </div>
+                <div id="list">
+                    <div class="subRow">
+                        <h3>Jonathen Doe</h3>
+                        <h3>Vessel-RQ2i5vRf</h3>
+                        <h3 class="shipName"><img src="Images/Icons/Ship Name.svg" alt="">Ship Name</h3>
+                        <h3 class="actionSubRow delete" class="">Remove</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="copyright">Copyright © 2020-2021 RENVO</h1>
+    
+    <div class="popup" id="popupAddMeetup">
+        <div class="overlay">
+            <div class="popupContent">
+                <h2>Create Meetup</h2>
+                <img onclick="togglePopup()" class="closeBtn" src="Images/Icons/Close.svg" alt="">
+                <div class="form">
+                    <h4>Meetup Name</h4>
+                    <input id="meetupField" type="text" placeholder="Ex. Class seattle 2021">
+                    <h4>Description</h4>
+                    <textarea id="descriptionField" type="text" placeholder="Write about meetup..."></textarea>
+                    <button onclick="addMeetup()" class="addBtn">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popupAddParticipant">
+        <div class="overlay">
+            <div class="popupContent">
+                <h2>Add Participant</h2>
+                <img onclick="secondTogglePopup()" class="closeBtn" src="Images/Icons/Close.svg" alt="">
+                <div class="miniLane">
+                    <h3>Meetup Name : <span>Class Seattle 2021 Sprint</span></h3>
+                </div>
+                <div class="form">
+                    <h4>Participant Name</h4>
+                    <input id="rowName" type="text" placeholder="Ex. John Doe"></input>
+                    <h4>Vessel</h4>
+                    <input id="rowVessel" type="text" placeholder="Ex. Vessel-RQ2i5vRf">
+                    <h4>Control</h4>
+                    <input id="rowShipName" type="text" placeholder="Ex. Ship Name">
+                    <button onclick="addParticipant()" class="addBtn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/myDrivesMeetups.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,840 @@
+body{
+    overflow-x: hidden;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.mainDiv .section1{
+    width: 50%;
+    height: auto;
+}
+
+.section1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.mainDiv .section2{
+    width: 50%;
+    height: auto;
+}
+
+.section2{
+    width: 50%;
+    height: 100%;
+    background-color: #F5F5F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section2 .card{
+    background-color: #fff;
+    height: auto;
+    width: 639.36px;
+    border-radius: 7px;
+    margin: 50.88px 153.6px;
+    margin-bottom: 0;
+    padding: 29.952px 48px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px -5px, rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
+}
+
+.card .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .logo img{
+    width: 112.992px;
+    height: 112.992px;
+}
+
+.card .logo h1{
+    margin-top: 15px;
+    font-size: 28.8px;
+    letter-spacing: 14px;
+    font-family: sf-thin;
+}
+
+.card .logo h3{
+    font-size: 15.36px;
+    margin-top: 5px;
+}
+
+.card h1{
+    font-size: 43.92px;
+    margin-top: 57.6px;
+}
+
+.card h3{
+    margin-top: 17.28px;
+    color: rgb(110, 110, 110);
+    font-size: 21.12px;
+}
+
+/* Universal properties for any button */
+.card button{
+    width: 100%;
+    height: 96px;
+    border-radius: 6.5px;
+}
+
+/* Properties for sign in with Google */
+.card .signIn{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40.32px;
+    border: 1px solid rgb(228, 227, 227);
+    background-color: #fff;
+    box-shadow: 0px 5px 5px .01px rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+.card .signIn img{
+    width: 30.72px;
+    height: 30.72px;
+    margin-left: 38.4px;
+    margin-top: 6.336px;
+}
+
+.card .signIn .lineInBetween{
+    height: 3vw;
+    width: .5px;
+    margin-left: 2.35vw;
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+}
+
+.card .signIn .signInGoogle{
+    font-family: sf-light;
+    letter-spacing: .7px;
+    font-size: 19.008px;
+    font-weight: bold;
+    margin-left: 2.4vw;
+}
+
+.card .greyChoice{
+    margin-top: 53.76px;
+    font-size: 17.472px;
+    word-spacing: 2vw;
+    letter-spacing: 3.5px;
+    word-spacing: 3px;
+    color: rgb(201, 201, 201);
+    font-family: sf-regular;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card .leftRightStick::before{
+    position: absolute;
+    content: '';
+    margin-top: .6vw;
+    width: 5.7vw;
+    height: 1px;
+    display: block;
+    background: rgb(241, 241, 241);
+}
+
+.card .leftRightStick::after{
+    margin-top: -.6vw;
+    margin-left: 22.7vw;
+    content: '';
+    width: 5.7vw;
+    height: 1px;
+    display: block;
+    background: rgb(241, 241, 241);
+}
+
+/* Input Fields of Email and  Password */
+
+.card .inputField{
+    width: 100%;
+    height: 96px;
+    border-radius: 6px;
+    border: 1.5px solid rgb(224, 224, 224);
+    padding-left: 2vw;
+}
+
+.card .inputField::placeholder{
+    font-family: sf-regular;
+    font-weight: lighter;
+    font-size: 20.16px;
+    color: rgb(175, 175, 175);
+}
+
+.signUp{
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    font-family: sf-medium;
+    color: white;
+    margin-top: 48px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.login{
+    border: none;
+    background-color: #fff;
+    font-family: sf-semibold;
+    color: var(--blue);
+    font-size: 22px;
+    margin-top: .5vw;
+    cursor: pointer;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.login a:visited{
+    color: var(--blue);
+}
+
+.signupCopyright{
+    text-align: center; 
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    font-size: 14.976px;
+    color: rgb(131, 131, 131);  
+}
+
+
+@media (max-height: 1000px) {
+    .mainDiv{
+        height: auto ;
+    }
+    
+    .section1 img{
+        height: 100% ;
+    }
+
+    .section1 {
+        height: auto ;
+    }
+
+    .section2{
+        height: auto ;
+    }
+    
+    .section2 .card{
+        height: auto ;
+    }
+}
+
+@media (max-width: 750px) {
+    .card .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .card .logo h1{
+        font-size: 19px;
+        margin-top: 10px;
+        letter-spacing: 10px;
+    }
+
+    .card .logo h3{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:1750px) {
+    
+    .card .leftRightStick::after{
+        margin-left: 25vw;
+    }
+
+    .mainDiv{
+        height: auto ;
+    }
+
+    .section2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section2 .card{
+        height: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .card .leftRightStick::after{
+        margin-left: 28.5vw;
+    }
+}
+
+@media (max-width:1550px) {
+    .card h1{
+        font-size: 43.92px;
+    }
+    
+    .card .signIn img{
+        width: 38.4px;
+        height: 38.4px;
+    }
+    
+    .card .inputField{
+        width: 100%;
+        height: 75px;
+        border-radius: 6px;
+        border: 1.5px solid rgb(224, 224, 224);
+        padding-left: 2vw;
+    }
+}
+
+@media (max-width: 1450px) {
+    .section2 .card{
+        width: 550px;
+    }
+
+    .card h1{
+        font-size: 38px;
+        margin-top: 25px;
+    }
+
+    .card h3{
+        font-size: 18px;
+        margin-top: 13px;
+    }
+    
+    .card button{
+        height: 75px;
+    }
+    
+    .card .signIn img{
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .section2 .card{
+        width: 450px;
+    }
+
+    .card h1{
+        font-size: 32px;
+        margin-top: 25px;
+    }
+
+    .card h3{
+        font-size: 16px;
+        margin-top: 13px;
+    }
+    
+    .card button{
+        height: 65px;
+    }
+    
+    .card .signIn img{
+        width: 23px;
+        height: 23px;
+    }
+
+    .card .signIn .signInGoogle{
+        font-size: 16px;
+    }
+
+    .card .greyChoice{
+        font-size: 15px;
+    }
+    
+    .card .leftRightStick::before{
+        background: rgb(211, 211, 211);
+        width: 4vw;
+    }
+    
+    .card .leftRightStick::after{
+        background: rgb(211, 211, 211);
+        width: 4vw;
+        margin-top: -.8vw;
+        margin-left: 26.5vw;
+    }
+
+    .card .inputField{
+        height: 65px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section2 .card{
+        width: 80%;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 29.952px 35px;
+    }
+
+    .signCopyright{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    
+    .signUp{
+        margin-top: 30px;
+    }
+    
+    .card .greyChoice{
+        margin-top: 40px;
+    }
+
+    .signUp,.login{
+        font-size: 1.6vw;
+    }
+    
+    .card .inputField::placeholder{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    .card .leftRightStick::after{
+        margin-left: 29vw;
+        margin-top: -1vw;
+    }
+
+    .card .logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card .logo h1{
+        font-size: 23px;
+    }
+
+    .card .logo h3{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 820px) and (min-height: 968px) {
+    .mainDiv{
+        height: 100vh ;
+    }
+
+    .section1 {
+        height: 100vh ;
+    }
+    
+    .section2{
+        height: 100vh ;
+    }
+}
+
+@media (max-width: 1400px) and (max-height: 960px) {
+    .desktop .mainDiv{
+        height: auto;
+    }
+    .mainDiv .section1{
+        height: auto;
+    }
+    .mainDiv .section2{
+        height: auto;
+    }
+}
+
+@media (max-width: 820px) and (max-height: 960px) {
+    .desktop .mainDiv{
+        height: 100vh ;
+    }
+    .mainDiv .section1 {
+        height: 100vh ;
+    }
+    .mainDiv .section2{
+        height: 100vh ;
+    }
+}
+
+@media (max-width: 650px) {
+    .greyChoice{
+        letter-spacing: 2px ;
+    }
+}
+
+@media (max-width: 950px) {
+    .card .greyChoice{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
+    .section2 .card{
+        width: 400px;
+        padding: 29.95px 25px;
+    }
+
+    .card h1{
+        font-size: 32px;
+        margin-top: 25px;
+    }
+
+    .card h3{
+        font-size: 16px;
+        margin-top: 13px;
+    }
+    
+    .card button{
+        height: 65px;
+    }
+    
+    .card .inputField{
+        height: 65px;
+    }
+
+    .card .leftRightStick::before{
+        width: 7vw;
+    }
+    
+    .card .leftRightStick::after{
+        width: 7vw;
+        margin-left: 30vw;
+    }
+
+    .signUp{
+        font-size: 20px;
+    }
+    
+    .login{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .card .leftRightStick::after{
+        width: 6vw;
+        margin-left: 33vw;
+    }
+}
+
+@media (max-width: 820px) {
+    .card .logo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .card .logo h1{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .card .logo h3{
+        font-size: 10px;
+    }
+
+    .card h3{
+        font-size: 13px;
+        margin-top: 13px;
+    }
+    
+    .section2 .card{
+        width: 300px;
+        padding: 29.95px 15px;
+    }
+
+    .card .greyChoice{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .card .signIn img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .card .signIn .signInGoogle{
+        font-size: 13px;
+    }
+
+    .card h1{
+        font-size: 28px;
+        margin-top: 25px;
+    }
+    
+    .card button, .card .inputField{
+        height: 55px;
+    }
+
+    .card .leftRightStick::before{
+        width: 5vw;
+    }
+    
+    .card .leftRightStick::after{
+        width: 5vw;
+        margin-left: 225px;
+    }
+
+    .signUp,.login{
+        font-size: 13px;
+    }
+
+    .signCopyright{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .card .logo h1{
+        font-size: 15px;
+        letter-spacing: 10px;
+    }
+
+    .card .logo h3{
+        font-size: 8px;
+    }
+
+    .card h1{
+        font-size: 23px;
+        margin-top: 25px;
+    }
+
+    .card h3{
+        font-size: 10px;
+        margin-top: 7px;
+    }
+    
+    .section2 .card{
+        width: 250px;
+        padding: 29.95px 15px;
+    }
+
+    .card .signIn img{
+        width: 15px;
+        height: 15px;
+        margin-left: 25px;
+    }
+
+    .card .signIn .lineInBetween{
+        height: 35px;
+    }
+
+    .card .signIn .signInGoogle{
+        font-size: 11px;
+    }
+
+    .card .greyChoice{
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .card .leftRightStick::before{
+        width: 4vw;
+    }
+    
+    .card .leftRightStick::after{
+        width: 4vw;
+        margin-left: 190px;
+    }
+
+    .signCopyright{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 550px) {
+    .section2 .card{
+        width: 230px;
+        padding: 29.95px 12px;
+    }
+
+    .card h1{
+        margin-top: 5px;
+    }
+
+    .card button, .card .inputField{
+        height: 40px;
+    }
+
+    .card .signIn{
+        margin-top: 20px;
+    }
+
+    .card .signIn .lineInBetween{
+        height: 25px;
+    }
+}
+
+/* Changing of screens from laptop to mobile at 414px */
+
+@media (max-width: 501px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+}
+
+@media (min-width: 501px) {
+    .mobile .mainDiv .section1 img{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+/* Styles for Mobile Screen */
+
+.mobile .mainDiv{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile .mainDiv .section1{
+    width: 100%;
+    height: 34vh;
+}
+
+.mobile .mainDiv .section1 img{
+    top: -4vh;
+    position: absolute;
+    height: 55vh;
+    width: 100vw;
+}
+
+.mobile .mainDiv .section2{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.mobile .mainDiv .section2 .card{
+    margin-top: -8vh;
+    width: 86vw;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.mobile .mainDiv .section2 .card .logo img{
+    width: 16.167vw;
+    height: 16.167vw;
+}
+
+.mobile .mainDiv .section2 .card .logo h1{
+    margin-top: 2vw;
+    font-size: 4.5vw;
+    letter-spacing: 13px;
+}
+
+.mobile .mainDiv .section2 .card .logo h3{
+    margin-top: .1vw;
+    font-size: 2.7vw;
+}
+
+.mobile .mainDiv .section2 .card h1{
+    font-size: 6.3vw;
+    margin-top: 5vw;
+}
+
+.mobile .mainDiv .section2 .card h3{
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+.mobile .mainDiv .section2 .card button{
+    width: 100%;
+    height: 15vw;
+    border-radius: 4px;
+}
+
+.mobile .mainDiv .section2 .card .signIn{
+    box-shadow: 0 2px 3px 0.01px rgb(228, 227, 227);
+    margin-top: 5vw;
+}
+
+.mobile .mainDiv .section2 .card .signIn img{
+    width: 6.5vw;
+    height: 6.5vw;
+    margin-left: 6vw;
+}
+
+.mobile .mainDiv .section2 .card .signIn .lineInBetween{
+    margin-left: 5vw;
+    height: 10vw;
+    background-color: rgb(236, 236, 236);
+}
+
+.mobile .mainDiv .section2 .card .signIn .signInGoogle{
+    font-size: 3.4vw;
+    margin-left: 7vw;
+}
+
+.mobile .mainDiv .section2 .card .greyChoice{
+    margin-top: 6vw;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+}
+
+.mobile .mainDiv .section2 .card .leftRightStick::after{
+    margin-left: 68vw;
+    width: 11vw;
+    margin-top: -1.8vw;
+}
+.mobile .mainDiv .section2 .card .leftRightStick::before{
+    width: 11vw;
+    margin-top: 1.4vw;
+}
+
+.email-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-password .inputField{
+    width: 100%;
+    height: 14vw;
+    border-radius: 4px;   
+    border-color: #eeeeee;
+}
+
+.email-password .inputField::placeholder{
+    font-size: 3.5vw;
+    padding-left: 4vw;
+    color: #c0c0c0;
+}
+
+.email-password .mt-3{
+    margin-top: 2.5vw;
+}
+
+.mobile .mainDiv .section2 .card .signUp{
+    font-size: 5vw;
+    letter-spacing: 3px;
+    margin-top: 7vw;
+}
+
+.mobile .mainDiv .section2 .card .login{
+    font-size: 4vw;
+} 
+
+.mobile .mainDiv .section2 .signupCopyright{
+    font-size: 3vw;
+    margin-top: 5vw;
+    padding-top: 4vw;
+    width: 100%;
+    height: 11.5vw;
+    background-color: #fff;
+    margin-bottom: 0;
+}

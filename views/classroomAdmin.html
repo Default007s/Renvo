@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/classroomAdmin.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Renvo | Classroom</title>
+</head>
+<body>
+
+    <div class="desktop">
+        <nav>
+            <a href="classroomAdmin">
+                <div class="navlogo">
+                    <img src="Images/Icons/1-01.jpg" alt="">
+                    <div>
+                        <h1>RENVO</h1>
+                        <h3>eNav Beta by Renvo</h3>
+                    </div>    
+                </div>
+            </a>
+            <div class="navList">
+                <ul>
+                    <li class="active"><a href="classroomAdmin">Classroom Admin</a></li>
+                    <li><a href="myDrives">My Drives</a></li>
+                    <li>Friends <span class="comingSoon">Coming Soon</span></li>
+                    <li class="myAccount"><a href="myAccount">My Account</a></li>
+                    <li class="lastList"><a href="contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <button><a>Logout</a></button>
+        </nav>
+    
+        <div class="mainBody">
+            <div class="toplane">
+                <h1 class="mainh1">Classroom Admin</h1>
+                <div><button class="dropdownAtoZ">By A - Z <img src="Images/Icons/dropdown.svg" alt=""></button></div>
+            </div>
+            <div class="cards" id="cards"></div>
+        </div>
+        <h2 class="copyright">Copyright © 2020-2021 RENVO</h2>
+        </div>
+
+ <!-- Mobile Display -->
+
+<div class="mobile">
+<nav>
+    <a href="classroomAdmin">
+        <div class="navlogo">
+            <img src="Images/Icons/1-01.jpg" alt="">
+            <div>
+                <h1>RENVO</h1>
+                <h3>eNav Beta by Renvo</h3>
+            </div>    
+        </div>
+    </a>
+    <div class="navList" id="navList">
+        <ul>
+            <li class="active"><a href="classroomAdmin">Classroom Admin</a></li>
+            <li><a href="myDrives">My Drives</a></li>
+            <li>Friends <span class="comingSoon">Coming Soon</span></li>
+            <li class="myAccount"><a href="myAccount">My Account</a></li>
+            <li class="lastList"><a href="contactUs">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <img class="menuIcon" onclick="navBarToggle()" src="Images/Icons/Menu.svg" alt="">
+    </div>
+    <img class="logout" src="Images/Icons/logout.svg" alt="">
+</nav>
+
+<div class="mainBody">
+    <div class="toplane">
+        <h1 class="mainh1">Classroom Admin</h1>
+        <div><button class="dropdownAtoZ">By A - Z <img src="Images/Icons/dropdown.svg" alt=""></button></div>
+    </div>
+    <div class="cards" id="mobileCards"></div>
+</div>
+<h1 class="copyright">Copyright © 2020-2021 RENVO</h1>        
+</div>
+<script src="js/classroomAdmin.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

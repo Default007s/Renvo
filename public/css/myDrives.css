@@ -1,0 +1,120 @@
+body{
+    background-color: #F5F5F7;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
+
+.active::after{
+    width: 100%;
+    margin-left: 0;
+}
+
+.miniContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30.72px;
+    padding: 28.8px 76.8px 28.8px 38.4px;
+    border-radius: 7px;
+}
+
+.miniContainer h2{
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.miniContainer p{
+    margin-top: 25px;
+    margin-bottom: 32.64px;
+    font-family: sf-regular;
+    font-size: 19.2px;
+    color: #97989B;
+}
+
+.miniContainer h3{
+    font-family: sf-regular;
+    margin-bottom: 28.8px;
+}
+
+.miniContainer .generalBtn{
+    border: none;
+    width: 403px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #F5F5F7;
+    padding: 21.12px 38.4px;
+}
+
+.generalBtn h3{
+    font-family: sf-thin;
+    margin: 0;
+}
+
+.generalBtn img{
+    width: 10px;
+    height: 6px;
+}
+
+.getDrivingBtn{
+    cursor: pointer;
+    padding: 17.28px 38.4px;
+    border-radius: 5px;
+    width: 403.2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--blue);
+    margin-top: 40px;
+}
+
+.getDrivingBtn h3{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 21.12px;
+    font-family: sf-light;
+    margin-left: 15.36px;
+}
+
+.getDrivingBtn img{
+    width: 28.8px;
+    height: 28.8px;
+    filter: brightness(300%);
+}
+
+.numberedList{
+    list-style-type: none;
+    font-family: sf-light;
+    margin-top: 20px;
+}
+
+.numberedList li{
+    color: #97989B;
+    font-size: 17px;
+}
+
+@media (max-width:500px) {
+    .miniContainer{
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .miniContainer .generalBtn,.getDrivingBtn{
+        width: 100%;
+    }
+}
+
+@media (max-width:520px) {
+    .copyright{
+        position: relative;
+    }
+}

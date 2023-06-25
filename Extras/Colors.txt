@@ -1,0 +1,4 @@
+Blue color - HSB : 223, 86, 100
+Black - HSB : 223, 52, 23
+Gray - HSB : 224, 14, 54
+Gray Background - HSB : 240, 1, 97

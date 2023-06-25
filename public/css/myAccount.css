@@ -1,0 +1,308 @@
+body{
+    background-color: #F5F5F7;
+}
+
+nav .menuIcon, nav .logout{
+    width: 30px;
+    height: 30px;
+}
+
+.menu,.logout{
+    display: none;
+}
+
+nav .navList ul li.active a{
+    color: var(--blue);
+}
+
+.active::after {
+    width: 100%;
+    margin-left: 0;
+}
+
+.mainh1{
+    margin-bottom: 40px;
+}
+
+.mainContainer{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.mainContainer .part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.part1 .part1Left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody h2{
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.mainContainer .part1 img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #b6b6b6;
+}
+
+.identity{
+    margin-left: 30px;
+}
+
+.email{
+    font-family: sf-regular;
+    margin-top: 20px;
+    font-size: 23px;
+    color: #979797;
+}
+
+.part1Right button{
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    color: var(--blue);
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1.5px solid var(--blue);
+}
+
+.part1Right button svg{
+    width: 30px;
+    height: 30px;
+}
+
+.part1Right button h3{
+    margin-top: 2px;
+    font-family: sf-semibold;
+    font-size: 22px;
+}
+
+.mainContainer .part2{
+    margin-top: 30px;
+}
+
+.participant{
+    display: none;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.data .column{
+    margin-left: 70px;
+}
+
+.data .firstColumn{
+    margin-left: 0;
+}
+
+.data .column h3{
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: rgb(143, 143, 143);
+    font-family: sf-regular;
+}
+
+.data .column h4{
+    font-family: sf-semibold;
+    font-size: 22px;
+}
+
+
+@media (max-width: 850px) {
+    .mainContainer .part1 img{
+        width: 120px;
+        height: 120px;
+    }
+    .mainBody h2{
+        font-size: 24px;
+    }
+    .email{
+        font-size: 17px;
+    }
+    .part1Right button {
+        padding: 10px 15px;
+    }
+    .part1Right button svg{
+        width: 25px;
+        height: 25px;
+    }
+    .part1Right button h3{
+        font-size: 18px;
+    }
+    .data .column{
+        margin-left: 30px;
+    }
+    .data .firstColumn{
+        margin-left: 0;
+    }
+    .data .column h3{
+        font-size: 15px;
+    }
+    .data .column h4{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .mainContainer .part1 img{
+        width: 100px;
+        height: 100px;
+    }
+    .mainBody h2{
+        font-size: 21px;
+    }
+    .email{
+        font-size: 14px;
+    }
+    .part1Right button {
+        padding: 5px 10px;
+    }
+    .part1Right button svg{
+        width: 20px;
+        height: 20px;
+    }
+    .part1Right button h3{
+        font-size: 14px;
+    }
+    .data .column{
+        margin-left: 30px;
+    }
+    .data .firstColumn{
+        margin-left: 0;
+    }
+    .data .column h3{
+        font-size: 12px;
+    }
+    .data .column h4{
+        font-size: 15px;
+    }
+}
+
+@media (max-height: 870px) and (max-width:600px) {
+    .copyright{
+        position: relative !important;
+    }
+}   
+
+@media (max-width:600px) {
+    .menu,.logout{
+        display: block;
+    }
+    .desktop{
+        display: block;
+    }
+    nav{
+        padding: 0 35px;
+        grid-template-columns: 9.5fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a{
+        justify-content: start;
+    }
+    nav button{
+        display: none;
+    }
+    nav .navlogo img{
+        width: 90px;
+        height: 90px;
+    }
+    .navlogo div{
+        margin-left: -10px;
+    }
+    nav .navlogo h1{
+        font-size: 20px;
+        letter-spacing: 10px;
+        margin-top: 10px;
+    }
+    nav .navlogo h3{
+        font-size: 10px;
+        margin-top: 9.6px;
+    }
+    .mainContainer .part1 img{
+        width: 110px;
+        height: 110px;
+    }
+    .mainContainer .part1Left{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mainContainer .part1Left img{
+        margin-top: 40px;
+    }
+    .mainBody h2{
+        font-size: 28px;
+    }
+    .identity{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .email{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .part1Right button{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .part1Right button h3{
+        font-size: 17px;
+    }
+    .part1Right button svg{
+        width: 25px;
+        height: 25px;
+    }
+    .participant{
+        display: block;
+    }
+    .details{
+        display: none;
+    }
+    .data{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .data .column{
+        margin-left: 0;
+    }
+    .data .column h3{
+        font-family: sf-light;
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .data .column h4{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .part1Right button{
+        margin-left: -100px;
+    }
+    .part1Right button svg{
+        width: 25px;
+        height: 25px;
+    }
+}
